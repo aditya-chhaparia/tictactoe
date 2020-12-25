@@ -72,7 +72,7 @@ input[type="submit"] {
 .scorecard {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-family: sans-serif;
 }
 
@@ -81,11 +81,11 @@ input[type="submit"] {
     text-align: center;
     height: 20px;
     color: red;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .player {
-    width: 150px;
+    width: 120px;
     display: inline-block;
 }
 
@@ -130,5 +130,13 @@ button {
     background: grey;
     color: white;
     border-radius: 5px;
+}
+
+button:nth-child(1) {
     margin-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
