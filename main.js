@@ -17,7 +17,7 @@ let winValue = "";
 let p1score = 0;
 let p2score = 0;
 let p1Value;
-let version;
+let version = 0;
 const valueGrid = ["", "", "", "", "", "", "", "", ""];
 let moves = ["cross", "naught"];
 
@@ -77,6 +77,7 @@ function resetGame() {
     gameOver = false;
     winValue = "";
     result.innerText = "";
+    version = 0;
 }
 
 function reset() {
@@ -130,7 +131,7 @@ function calcMove() {
         }
         if (valueGrid[1] || valueGrid[2] || valueGrid[5]) {
             version = 2;
-            return 3;
+            return 6;
         }
     }
 
