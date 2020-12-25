@@ -140,6 +140,14 @@ function calcMove() {
             (valueGrid[2] === p1Value && valueGrid[6] === p1Value)
         )
             return 1;
+        if (valueGrid[0] === p1Value && valueGrid[7] === p1Value) return 6;
+        if (valueGrid[0] === p1Value && valueGrid[5] === p1Value) return 2;
+        if (valueGrid[2] === p1Value && valueGrid[7] === p1Value) return 8;
+        if (valueGrid[2] === p1Value && valueGrid[3] === p1Value) return 0;
+        if (valueGrid[6] === p1Value && valueGrid[1] === p1Value) return 0;
+        if (valueGrid[6] === p1Value && valueGrid[5] === p1Value) return 8;
+        if (valueGrid[8] === p1Value && valueGrid[1] === p1Value) return 2;
+        if (valueGrid[8] === p1Value && valueGrid[3] === p1Value) return 6;
     }
 
     if (turn === 4) {
