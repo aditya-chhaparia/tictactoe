@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 90%;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(192, 232, 255, 0.9);
+    padding: 20px;
+}
+
+.form-head {
+    margin-bottom: 5px;
+    color: ;
+}
+
+br + .form-head {
+    margin-top: 30px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: grey;
+    border-radius: 10px;
+    gap: 3px;
+    margin: 20px 0;
+}
+
+.block {
+    /* background: orange; */
+    padding-top: 100%;
+    background: white;
+    background-repeat: no-repeat;
+}
+
+.naught {
+    background-position: center;
+    background-size: 90% 90%;
+    background-image: url("naught.png");
+}
+
+.cross {
+    background-position: center;
+    background-size: 110% 110%;
+    background-image: url("cross.png");
+}
+
+.hidden {
+    display: none;
+}
+
+.scorecard {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+.result {
+    display: block;
+    text-align: center;
+    height: 20px;
+    color: red;
+    font-size: 1.5em;
+}
+
+.player {
+    width: 150px;
+    display: inline-block;
+}
+
+#player-two-name {
+    text-align: right;
+}
+
+.player,
+.result {
+    text-transform: uppercase;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.input[type="radio"]:hover,
+label:hover {
+    cursor: pointer;
+}
+
+button {
+    padding: 5px 15px;
+    font-size: 1.2em;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+}

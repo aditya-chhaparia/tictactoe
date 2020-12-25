@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="container">
+            <form class="form">
+                <h3 class="form-head">Choose Mode Of Play</h3>
+                <input
+                    type="radio"
+                    id="two-player"
+                    name="mode"
+                    value="two"
+                    checked
+                />
+                <label for="two-player">Two Player</label><br />
+                <input
+                    type="radio"
+                    id="one-player"
+                    name="mode"
+                    value="one"
+                    required
+                />
+                <label for="one-player">One Player</label><br />
+                <h3 class="form-head">Choose Symbol For Player One</h3>
+                <input
+                    type="radio"
+                    id="cross"
+                    name="token"
+                    value="cross"
+                    checked
+                />
+                <label for="cross">Cross (X)</label><br />
+                <input
+                    type="radio"
+                    id="naught"
+                    name="token"
+                    value="naught"
+                    required
+                />
+                <label for="naught">Naught (O)</label><br />
+                <h3 class="form-head">Choose Name of Players</h3>
+                <label for="player-one">Player One</label><br />
+                <input
+                    type="text"
+                    id="player-one"
+                    name="player-one"
+                    maxlength="10"
+                    placeholder="Player One"
+                    autocomplete="off"
+                    required
+                />
+                <br />
+                <label for="player-two">Player Two</label><br />
+                <input
+                    type="text"
+                    id="player-two"
+                    name="player-two"
+                    maxlength="10"
+                    placeholder="Player Two"
+                    autocomplete="off"
+                    required
+                />
+                <br />
+                <button>Submit</button>
+            </form>
+            <div class="game hidden">
+                <div class="scorecard">
+                    <span class="player" id="player-one-name">Player One</span>
+                    <span class="score">
+                        <span id="player-one-score">0</span>
+                        <span id="player-two-score">0</span>
+                    </span>
+                    <span class="player" id="player-two-name">Player Two</span>
+                </div>
+                <span class="result"></span>
+                <div class="grid">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+                <div class="buttons">
+                    <button id="change">Change Settings</button>
+                    <button id="replay">Replay</button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
