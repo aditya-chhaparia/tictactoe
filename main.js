@@ -152,7 +152,7 @@ function calcMove() {
     }
 
     if (turn === 4) {
-        if (version === 1) {
+        if (version === 1 && valueGrid[1]) {
             if (valueGrid[4] || valueGrid[7]) {
                 return 4;
             }
@@ -166,7 +166,7 @@ function calcMove() {
             }
         }
 
-        if (version === 2) {
+        if (version === 2 && valueGrid[3]) {
             if (valueGrid[1] || valueGrid[5]) {
                 return 4;
             }
